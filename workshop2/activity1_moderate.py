@@ -1,3 +1,4 @@
+import functools
 #Use map() to add 1 to each element in [5, 10, 15]. [Easy warmup]
 numbers=[5, 10, 15]
 updated_list=list(map(lambda x: x+1,numbers))
@@ -29,3 +30,5 @@ print("===================q5 is completed====================")
 numbers=[1, 2, 3, 4]
 numbers_sum=map(lambda x: x,numbers)
 print(numbers_sum)
+updated_sum=functools.reduce(lambda x: x,numbers)
+print(updated_list)
